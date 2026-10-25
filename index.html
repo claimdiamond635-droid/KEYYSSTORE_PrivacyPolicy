@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Kebijakan privasi Auto Order KEYYSSTORE: informasi mengenai penggunaan data untuk layanan dan transaksi.">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy — KEYYSSTORE</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080d19;
+      --panel: rgba(19, 28, 48, .68);
+      --panel-border: rgba(255,255,255,.12);
+      --text: #f2f5fb;
+      --muted: #a8b3c7;
+      --accent: #91baff;
+      --accent-strong: #c5dcff;
+      --shadow: 0 24px 80px rgba(0,0,0,.32);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 12% 8%, rgba(75, 112, 190, .22), transparent 36rem),
+        radial-gradient(ellipse at 88% 38%, rgba(79, 95, 163, .16), transparent 34rem),
+        linear-gradient(145deg, #080d19 0%, #10182a 55%, #090e1a 100%);
+      font: 16px/1.75 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    body::before, body::after {
+      content: ""; position: fixed; z-index: -1; border-radius: 50%;
+      filter: blur(2px); pointer-events: none; opacity: .45;
+      animation: drift 18s ease-in-out infinite alternate;
+    }
+    body::before { width: 19rem; height: 19rem; top: 16%; left: -10rem; background: rgba(75, 128, 225, .12); }
+    body::after { width: 23rem; height: 23rem; right: -12rem; bottom: 2%; background: rgba(132, 105, 220, .11); animation-delay: -7s; }
+    a { color: var(--accent-strong); text-underline-offset: 4px; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .shell { width: min(100% - 32px, 980px); margin: 0 auto; padding: 30px 0 24px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); font-weight: 800; letter-spacing: .12em; }
+    .brand-mark { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid rgba(255,255,255,.18); border-radius: 13px; background: linear-gradient(145deg, rgba(255,255,255,.17), rgba(255,255,255,.04)); box-shadow: 0 8px 28px rgba(0,0,0,.2); }
+    .brand-mark svg { width: 21px; height: 21px; }
+    .status { border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 6px 11px; color: var(--muted); font-size: 12px; letter-spacing: .04em; background: rgba(255,255,255,.035); }
+    .hero { padding: clamp(26px, 6vw, 54px); border: 1px solid var(--panel-border); border-radius: 28px; background: linear-gradient(135deg, rgba(255,255,255,.095), rgba(255,255,255,.025)); box-shadow: var(--shadow); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); position: relative; overflow: hidden; }
+    .eyebrow { color: var(--accent); font-size: 12px; text-transform: uppercase; font-weight: 750; letter-spacing: .17em; }
+    h1 { margin: 9px 0 12px; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.12; letter-spacing: -.045em; }
+    .lead { max-width: 680px; color: var(--muted); font-size: clamp(1rem, 2vw, 1.08rem); margin: 0; }
+    .updated { display: inline-flex; gap: 8px; align-items: center; margin-top: 22px; color: #c3cde0; font-size: 13px; }
+    .updated svg { width: 15px; height: 15px; }
+    .content { display: grid; gap: 14px; margin-top: 18px; }
+    .section { padding: 25px clamp(20px, 4vw, 34px); border: 1px solid var(--panel-border); border-radius: 22px; background: var(--panel); box-shadow: 0 14px 45px rgba(0,0,0,.12); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); animation: rise .65s both; }
+    .section:nth-child(2) { animation-delay: .06s; } .section:nth-child(3) { animation-delay: .12s; } .section:nth-child(4) { animation-delay: .18s; } .section:nth-child(5) { animation-delay: .24s; } .section:nth-child(6) { animation-delay: .3s; }
+    h2 { margin: 0 0 9px; font-size: 1.12rem; letter-spacing: -.015em; }
+    p { margin: 0 0 10px; color: #c3ccdc; } p:last-child { margin-bottom: 0; }
+    ul { margin: 8px 0 0; padding-left: 21px; color: #c3ccdc; }
+    li { padding: 3px 0 3px 3px; }
+    .support { margin-top: 18px; padding: clamp(25px, 5vw, 38px); border-radius: 24px; border: 1px solid rgba(145,186,255,.25); background: linear-gradient(130deg, rgba(86,127,204,.17), rgba(255,255,255,.045)); box-shadow: var(--shadow); }
+    .support h2 { font-size: clamp(1.3rem, 3vw, 1.65rem); margin-bottom: 7px; }
+    .support p { max-width: 650px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 18px; min-height: 48px; padding: 0 19px; border-radius: 14px; color: #101827; background: linear-gradient(135deg, #d6e5ff, #8eb7ff); font-weight: 800; text-decoration: none; box-shadow: 0 10px 28px rgba(105,153,235,.2); transition: transform .2s ease, box-shadow .2s ease; }
+    .button:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(105,153,235,.3); }
+    .button svg { width: 18px; height: 18px; }
+    footer { text-align: center; padding: 25px 8px 12px; color: #7f8ca4; font-size: 12px; }
+    .audio-toggle { position: fixed; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); z-index: 10; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 17px; border: 1px solid rgba(255,255,255,.18); background: rgba(22,32,53,.82); color: #e8f0ff; box-shadow: 0 12px 36px rgba(0,0,0,.32); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); cursor: pointer; transition: transform .2s ease, background .2s ease; }
+    .audio-toggle:hover { transform: translateY(-2px); background: rgba(43,59,88,.94); }
+    .audio-toggle svg { width: 22px; height: 22px; }
+    .audio-toggle[aria-pressed="true"] { border-color: rgba(145,186,255,.65); color: var(--accent-strong); }
+    .audio-label { position: absolute; right: 62px; white-space: nowrap; font-size: 12px; color: var(--text); background: rgba(13,20,35,.9); border: 1px solid var(--panel-border); border-radius: 10px; padding: 6px 9px; opacity: 0; transform: translateX(4px); pointer-events: none; transition: .2s ease; }
+    .audio-toggle:hover .audio-label, .audio-toggle:focus-visible .audio-label { opacity: 1; transform: translateX(0); }
+    .loader { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: #080d19; transition: opacity .45s ease, visibility .45s ease; }
+    .loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .loader-inner { display: grid; justify-items: center; gap: 17px; text-align: center; padding: 24px; }
+    .loader-logo { width: 58px; height: 58px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.2); border-radius: 19px; background: linear-gradient(145deg, rgba(255,255,255,.14), rgba(255,255,255,.035)); animation: breathe 1.5s ease-in-out infinite; }
+    .loader-logo svg { width: 27px; height: 27px; }
+    .loader-name { font-weight: 800; letter-spacing: .16em; font-size: 13px; }
+    .loader-copy { color: var(--muted); font-size: 13px; }
+    .loader-track { width: 155px; height: 3px; border-radius: 99px; overflow: hidden; background: rgba(255,255,255,.1); }
+    .loader-bar { width: 100%; height: 100%; background: linear-gradient(90deg, #6c9df0, #d6e5ff); transform-origin: left; animation: progress 5s linear forwards; }
+    @keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes breathe { 0%,100% { transform: scale(1); opacity: .78; } 50% { transform: scale(1.06); opacity: 1; } }
+    @keyframes drift { from { transform: translate3d(0,-10px,0); } to { transform: translate3d(22px,25px,0); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 22px, 980px); padding-top: 17px; }
+      .topbar { margin-bottom: 14px; }
+      .brand { gap: 9px; font-size: 13px; }
+      .brand-mark { width: 36px; height: 36px; border-radius: 11px; }
+      .status { font-size: 10px; padding: 5px 8px; }
+      .hero { border-radius: 22px; }
+      .section { border-radius: 18px; }
+      .audio-toggle { width: 48px; height: 48px; border-radius: 15px; right: 14px; bottom: 14px; }
+      .support { border-radius: 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Memuat website" role="status">
+    <div class="loader-inner">
+      <div class="loader-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V6l8 8 8-8v12"/><path d="M8 18h8"/></svg>
+      </div>
+      <div class="loader-name">KEYYSSTORE</div>
+      <div class="loader-copy">Menyiapkan halaman untuk Anda</div>
+      <div class="loader-track" aria-hidden="true"><div class="loader-bar"></div></div>
+    </div>
+  </div>
+
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="KEYYSSTORE beranda">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V6l8 8 8-8v12"/><path d="M8 18h8"/></svg></span>
+        <span>KEYYSSTORE</span>
+      </a>
+      <span class="status">PRIVACY POLICY</span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">Informasi & Perlindungan Data</div>
+      <h1>Kebijakan Privasi</h1>
+      <p class="lead">Kami menghargai privasi Anda. Halaman ini menjelaskan informasi yang mungkin diproses saat Anda menggunakan layanan Auto Order KEYYSSTORE, serta bagaimana informasi tersebut digunakan untuk mendukung pesanan dan layanan pelanggan.</p>
+      <div class="updated">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        Terakhir diperbarui: 25 Oktober 2026
+      </div>
+    </section>
+
+    <div class="content">
+      <section class="section">
+        <h2>01. Informasi yang Diproses</h2>
+        <p>Saat Anda menggunakan bot Auto Order KEYYSSTORE, informasi tertentu dapat diproses sesuai fitur yang Anda gunakan, antara lain:</p>
+        <ul>
+          <li>Identitas akun Telegram yang diperlukan untuk mengenali pengguna, seperti Telegram ID dan nama pengguna.</li>
+          <li>Detail pesanan, status transaksi, serta informasi produk yang dibeli.</li>
+          <li>Informasi yang Anda kirim sendiri kepada layanan pelanggan untuk membantu penyelesaian kendala.</li>
+        </ul>
+        <p>Jangan mengirimkan kata sandi, kode OTP, atau informasi rahasia yang tidak diperlukan untuk menyelesaikan pesanan.</p>
+      </section>
+
+      <section class="section">
+        <h2>02. Tujuan Penggunaan Informasi</h2>
+        <p>Informasi digunakan seperlunya untuk memproses pesanan, memperbarui status transaksi, menyediakan riwayat pembelian jika tersedia, mencegah penyalahgunaan layanan, dan membantu pengguna ketika menghubungi customer service.</p>
+      </section>
+
+      <section class="section">
+        <h2>03. Pembayaran dan Layanan Pihak Ketiga</h2>
+        <p>Proses pembayaran atau komunikasi dapat melibatkan layanan pihak ketiga, termasuk Telegram dan penyedia pembayaran yang digunakan pada saat transaksi. Layanan tersebut memiliki kebijakan privasi masing-masing. KEYYSSTORE tidak meminta Anda membagikan PIN, kata sandi perbankan, atau kode OTP melalui chat.</p>
+      </section>
+
+      <section class="section">
+        <h2>04. Penyimpanan dan Keamanan</h2>
+        <p>Informasi transaksi dapat disimpan selama diperlukan untuk operasional, dukungan pelanggan, pencatatan, atau kewajiban yang berlaku. Kami berupaya menerapkan langkah perlindungan yang wajar, tetapi tidak ada sistem penyimpanan atau transmisi data yang dapat dijamin sepenuhnya bebas risiko.</p>
+      </section>
+
+      <section class="section">
+        <h2>05. Pembagian Informasi</h2>
+        <p>Informasi tidak dimaksudkan untuk diperjualbelikan. Informasi hanya dapat diakses atau dibagikan sejauh diperlukan untuk menjalankan layanan, menangani transaksi, memenuhi kewajiban hukum, atau menanggapi penyalahgunaan dan ancaman keamanan yang relevan.</p>
+      </section>
+
+      <section class="section">
+        <h2>06. Pilihan dan Hak Pengguna</h2>
+        <p>Anda dapat menghubungi customer service untuk menanyakan informasi yang terkait dengan akun atau pesanan Anda, serta meminta koreksi atau penghapusan data jika memungkinkan. Beberapa catatan mungkin perlu dipertahankan untuk keperluan transaksi, keamanan, atau kewajiban hukum.</p>
+      </section>
+
+      <section class="section">
+        <h2>07. Perubahan Kebijakan</h2>
+        <p>Kebijakan ini dapat diperbarui ketika fitur, proses transaksi, atau ketentuan layanan berubah. Versi terbaru akan ditampilkan pada halaman ini. Dengan terus menggunakan layanan setelah perubahan dipublikasikan, Anda dianggap telah membaca kebijakan yang diperbarui.</p>
+      </section>
+    </div>
+
+    <section class="support" aria-labelledby="support-title">
+      <div class="eyebrow">Butuh bantuan?</div>
+      <h2 id="support-title">CUSTOMER SERVICE KEYYSSTORE</h2>
+      <p>Jika ada pertanyaan mengenai kebijakan privasi, transaksi, atau kendala saat menggunakan bot, silakan hubungi tim customer service melalui kanal resmi kami.</p>
+      <a class="button" href="https://t.me/KeyyssSupportBot" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10.5 13.5"/><path d="m21 3-6.5 18-4-7.5L3 9.5 21 3Z"/></svg>
+        Chat CS Sekarang
+      </a>
+    </section>
+
+    <footer>© <span id="year">2026</span> KEYYSSTORE. All rights reserved.</footer>
+  </main>
+
+  <audio id="background-audio" preload="none" loop>
+    <source src="https://www.image2url.com/r2/default/audio/1792934770118-7b71b0c0-69cb-4f5f-a823-71141d1077ea.mp3" type="audio/mpeg">
+  </audio>
+  <button class="audio-toggle" id="audio-toggle" type="button" aria-label="Nyalakan audio" aria-pressed="false" title="Nyalakan audio">
+    <span class="audio-label" id="audio-label">Nyalakan audio</span>
+    <svg id="headset-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 13v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="12" width="4" height="7" rx="2"/><rect x="17" y="12" width="4" height="7" rx="2"/><path d="M21 18a4 4 0 0 1-4 4h-3"/>
+    </svg>
+  </button>
+
+  <script>
+    (() => {
+      "use strict";
+      const loader = document.getElementById("loader");
+      const audio = document.getElementById("background-audio");
+      const audioButton = document.getElementById("audio-toggle");
+      const audioLabel = document.getElementById("audio-label");
+      const storageKey = "keyysstore_privacy_loaded_v1";
+      const year = document.getElementById("year");
+      year.textContent = String(new Date().getFullYear());
+
+      // First visit shows a 5-second intro; later visits skip it using session-independent local storage.
+      let alreadyLoaded = false;
+      try { alreadyLoaded = localStorage.getItem(storageKey) === "1"; } catch (_) {}
+      const finishLoading = () => {
+        loader.classList.add("hidden");
+        try { localStorage.setItem(storageKey, "1"); } catch (_) {}
+      };
+      if (alreadyLoaded) {
+        loader.classList.add("hidden");
+      } else {
+        window.setTimeout(finishLoading, 5000);
+      }
+
+      audioButton.addEventListener("click", async () => {
+        if (audio.paused) {
+          audioButton.disabled = true;
+          try {
+            await audio.play();
+            audioButton.setAttribute("aria-pressed", "true");
+            audioButton.setAttribute("aria-label", "Matikan audio");
+            audioButton.title = "Matikan audio";
+            audioLabel.textContent = "Matikan audio";
+          } catch (_) {
+            audioLabel.textContent = "Audio tidak dapat diputar";
+            audioButton.title = "Coba lagi";
+          } finally {
+            audioButton.disabled = false;
+          }
+        } else {
+          audio.pause();
+          audioButton.setAttribute("aria-pressed", "false");
+          audioButton.setAttribute("aria-label", "Nyalakan audio");
+          audioButton.title = "Nyalakan audio";
+          audioLabel.textContent = "Nyalakan audio";
+        }
+      });
+      audio.addEventListener("error", () => {
+        audioButton.setAttribute("aria-pressed", "false");
+        audioLabel.textContent = "Audio tidak tersedia";
+      });
+    })();
+  </script>
+</body>
+        </html>
+        
